@@ -1,4 +1,4 @@
-name: DAST OWASP ZAP 
+name: DAST OWASP ZAP FASTBANK_AUTH_LAB
 on:
   workflow_dispatch: #run manually from Actions tab
   # You can also add:
