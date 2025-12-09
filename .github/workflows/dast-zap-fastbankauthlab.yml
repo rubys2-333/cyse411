@@ -1,4 +1,4 @@
-name: DAST OWASP ZAP FASTBANK_AUTH_LAB
+name: DAST OWASP ZAP FASTBANK-AUTH-LAB
 on:
   workflow_dispatch: #run manually from Actions tab
   # You can also add:
@@ -19,12 +19,12 @@ jobs:
           node-version: '20'
       
       - name: Install lab dependencies
-        working-directory: fastbank_auth_lab
+        working-directory: fastbank-auth-lab
         run: |
           npm install
       
       - name: Start vulnerable app
-        working-directory: fastbank_auth_lab
+        working-directory: fastbank-auth-lab
         run: |
           npm start &
           # wait for the server to boot 
